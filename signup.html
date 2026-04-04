@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+            <h2>Signup</h2>
+            <form id="signupForm">
+                <label for="username"> User Name:</label>
+                <input type="text" id="username" required>
+                <label for="email"> Email:</label>
+                <input type="email" id="email" required>
+                <label for="Mobile"> Mobile:</label>
+                <input type="tel" id="mobile" required>
+                <label for="password"> Password:</label>
+                <input type="password" id="signupPassword" required>
+                <label for="confirmPssword"> Retype Password:</label>
+                <input type="password" id="confirmPassword" required>
+                <button type="submit" onclick="signupUser(
+                    document.getElementById('username').value,
+                    document.getElementById('email').value,
+                    document.getElementById('mobile').value,
+                    document.getElementById('password').value,
+                )">Create New User </button>
+    
+            </form>
+    </main>
+    <footer>
+        <p><p>Copyright @ ABC India 2024 <br>Practical Test Case | ADTUPTC14112024 | Rinki Basumatary </p>
+    </footer>
+    </body>
+    </html>
